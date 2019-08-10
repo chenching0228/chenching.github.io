@@ -1,0 +1,292 @@
+*{
+scroll-behavior: smooth;
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+}
+.navbar{
+  background-color: black;
+  display:flex;
+  width: 100%;
+  -webkit-box-shadow: 4px 7px 24px -8px rgba(24,25,26,1);
+-moz-box-shadow: 4px 7px 24px -8px rgba(24,25,26,1);
+box-shadow: 4px 7px 24px -8px rgba(24,25,26,1);
+text-transform: uppercase;
+}
+ .brand{
+padding: 1rem;
+font-size: 2rem;
+flex: 4;
+color: white;
+}
+.topnav{
+  display: flex;
+  list-style: none;
+  padding-top:0.9rem;
+  color: black;
+
+}
+
+.nav-link{
+  padding: 0 10px;
+  text-decoration:none ;
+  color: white;
+  flex: 2;
+transition: 0.7s ease-in-out;
+
+}
+.nav-link:hover{
+  cursor: pointer;
+  color: blue;
+}
+.span-nav{
+  flex: 1;
+}
+.dropDownLink a{
+  text-decoration: none;
+  position: absolute;
+  font-size: 1.3rem;
+  color: #303137;
+  top: 12px;
+  right: 15px;
+  display: none;
+}
+@media (max-width: 768px){
+  .dropDownLink a{
+    display: block;
+    color: white;
+    margin: 5px 25px;
+
+  }
+
+  .nav-link{
+  padding: 0 10px;
+text-decoration: none;
+display: none;
+
+  color: #303137;
+  flex: 2;
+}
+  .span-nav{
+  display: none;
+
+}
+.topnav{
+  flex-direction:column;
+}
+ul.topnav.responsive a.nav-link{
+  display: block;
+  position: relative;
+  top: 20px;
+  right:20px;
+  text-align:right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #09d601
+
+}
+}
+.headshotcontainer{
+  background-image: #f4f4f4;
+  padding: 5rem 0;
+}
+
+.headshot-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#profile-img{
+width: 200px;
+height: 200px;
+border: 2px solid aqua;
+margin: 0 auto;
+border-radius: 50%;
+
+}
+.headshot-title{
+  font-weight: 450;
+}
+.headshot-sub{
+margin-top: -10px;
+font-weight: 300;
+}
+.resume{
+  width: 200px;
+  font-size: 1.4rem;
+  padding: 5px;
+  background-color:grey;
+  color: white;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-size: 300;
+  border: none;
+  -webkit-box-shadow: 4px 7px 24px -8px rgba(24,25,26,1);
+-moz-box-shadow: 4px 7px 24px -8px rgba(24,25,26,1);
+box-shadow: 4px 7px 24px -8px rgba(24,25,26,1);
+transition: 0.5s ease-in-out;
+}
+.resume:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+/* intro section */
+.intro-container{
+
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media(max-width: 768px){
+.intro-container{
+  display: flex;
+  flex-direction: column;
+
+}
+.intro-wrapper{
+  margin: 0 auto;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+.intro-wrapper{
+
+
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.intro-img{
+max-width:200px;
+
+width: 100px;
+margin: auto;
+}
+.intro-title, .into-sub{
+  text-align: center;
+}
+.intro-title{
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+}
+.intro-sub{
+  font-weight: lighter;
+}
+
+
+.parallex-container{
+  padding:5rem 5rem;
+  background-image: url("../source/felix-wegerer-2pUz1VSINsA-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 10px 10px 95px -31px#383838;
+}
+.parallex-title{
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight:lighter;
+  text-align: center;
+}
+
+.parallex-content{
+font-size:
+color: white
+}
+.statement-container{
+  background-color: aliceblue;
+  padding:  5rem 5rem;
+}
+.statement-wrapper{
+  display: flex;
+
+}
+.statement-wrapper-2{
+  display:flex;
+  flex-direction: row-reverse;
+  padding-top:2rem;
+}
+@media(max-width: 768px){
+  .statement-wrapper, .statement-wrapper-2{
+    display: flex;
+    flex-direction: column;
+  }
+  .statemtn-img{
+    margin: 0s auto;
+  }
+  .statement-text,.statement-text-2{
+  text-align; center;}
+}
+
+.statement-img{
+  width: 300px;
+  height: auto;
+  max-height: 300px;
+  padding: 0 2rem;
+}
+.
+
+.statement-text{
+  padding: 0 3rem;
+}
+.statement-text-2{
+  padding: 0 2rem;
+}
+
+.statement-content{
+  font-weight: 300;
+}
+.porfolio-container{
+  background-color: bisque;
+  padding: 5rem 8rem;
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.porfolio-item{
+
+  max-width: 200px;
+  padding: 3px;
+  margin: 0 2rem;
+}
+.placeholder-img{
+  width: 200px;
+  height: 200px;
+background: orange;
+margin: 0 auto;
+transition: 0.5s ease-in-out;
+}
+.placeholder-img:hover{
+transform: scale(1.1);
+
+}
+.caligraphy{
+max-width: 200px;
+height: 200px;
+}
+.footer-container{
+background-color: bisque;
+padding: 3rem 0;
+
+}
+.contact-title{
+text-align: center;
+text-transform: uppercase;
+font-size: 29px;
+color: #fff;
+font-weight: lighter;
+}
